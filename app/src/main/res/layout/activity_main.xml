@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.louisgeek.louisviewflipperdemo.MainActivity">
+
+
+    <ViewFlipper
+        android:id="@+id/id_vf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/right_in"
+        android:outAnimation="@anim/right_out"
+        android:flipInterval="3000"
+        >
+        <include layout="@layout/view_flipper_01"></include>
+        <include layout="@layout/view_flipper_02"></include>
+        <include layout="@layout/view_flipper_03"></include>
+
+    </ViewFlipper>
+</RelativeLayout>
