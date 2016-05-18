@@ -4,9 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.louisgeek.louisviewflipperdemo.MainActivity">
-
+<Button
+    android:id="@+id/id_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="next"
+    />
 
     <ViewFlipper
+        android:layout_below="@id/id_btn"
         android:id="@+id/id_vf"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
