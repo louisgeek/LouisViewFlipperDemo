@@ -44,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+        Button idbtn2 = (Button) findViewById(R.id.id_btn2);
+        idbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,GesturesDemoActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
          idvf = (ViewFlipper) findViewById(R.id.id_vf);
 
        View view04=LayoutInflater.from(this).inflate(R.layout.view_flipper_04,null);
